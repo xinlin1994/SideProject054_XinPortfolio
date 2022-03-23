@@ -1,3 +1,11 @@
+<!--
+ * @Author: BDFD
+ * @Date: 2022-03-23 13:45:20
+ * @LastEditTime: 2022-03-23 14:02:36
+ * @LastEditors: BDFD
+ * @Description: 
+ * @FilePath: \SideProject054_XinPortfolio\views\Index\01home.ejs
+-->
 <script>
 	document.title = 'Resume Home Page';
 </script>
@@ -5,27 +13,26 @@
 <div id="ace-content" class="ace-container-shift">
 	<div class="ace-container">
 		<%- include('../partials/small_navigation') %>
-		<div class="ace-paper-stock">
-			<main class="ace-paper clearfix">
-				<div class="ace-paper-cont clear-mrg">
-					<!-- START: PAGE CONTENT -->
-					<div class="padd-box clear-mrg">
-						<!-- Summary Section -->
-						<%- include('../PageEdit/A101_HomePage_SummarySection') %>
-						<!-- Summary Section -->
-						<!-- Personal Info Section -->
-						<%- include('../PageEdit/A102_HomePage_PersonalInfoSection') %>
-						<!-- Personal Info Section -->
-						<!-- Qualification Section -->
-						<%- include('../PageEdit/A103_HomePage_QualificationSection') %>
-						<!-- Qualification Section -->
-					<!-- END: PAGE CONTENT -->
-				</div>
-				<!-- .ace-paper-cont -->
-			</main>
-			<!-- .ace-paper -->
-		</div>
-		<!-- .ace-paper-stock -->
+			<div class="ace-paper-stock">
+				<main class="ace-paper clearfix">
+					<div class="ace-paper-cont clear-mrg">
+						<!-- START: PAGE CONTENT -->
+						<div class="padd-box clear-mrg">
+							<!-- Summary Section -->
+							<%- include('../PageEdit/01HomePage/01Summary') %>
+								<!-- Summary Section -->
+								<!-- Personal Info Section -->
+								<%- include('../PageEdit/01HomePage/02PersonalInfo') %>
+									<!-- Personal Info Section -->
+									<!-- Qualification Section -->
+									<!-- Qualification Section -->
+									<!-- END: PAGE CONTENT -->
+						</div>
+						<!-- .ace-paper-cont -->
+				</main>
+				<!-- .ace-paper -->
+			</div>
+			<!-- .ace-paper-stock -->
 	</div>
 	<!-- .ace-container -->
 </div>
