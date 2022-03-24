@@ -1,7 +1,7 @@
 /*
  * @Author: BDFD
  * @Date: 2022-03-23 13:45:20
- * @LastEditTime: 2022-03-24 10:42:52
+ * @LastEditTime: 2022-03-24 14:02:01
  * @LastEditors: BDFD
  * @Description:
  * @FilePath: \SideProject054_XinPortfolio\app.js
@@ -16,8 +16,6 @@ var expressLayouts = require("express-ejs-layouts");
 var cors = require("cors");
 
 var indexRouter = require("./routes/index");
-var projectRouter = require("./routes/project");
-var demoRouter = require("./routes/demo");
 
 var app = express();
 
@@ -38,8 +36,6 @@ app.use(cors());
 // view engine setup
 
 app.use("/", indexRouter);
-app.use("/project", projectRouter);
-app.use("/demo", demoRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
