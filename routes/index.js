@@ -1,7 +1,7 @@
 /*
  * @Author: BDFD
  * @Date: 2021-10-10 13:47:41
- * @LastEditTime: 2022-03-24 11:55:15
+ * @LastEditTime: 2022-03-24 13:19:59
  * @LastEditors: BDFD
  * @Description: In User Settings Edit
  * @FilePath: \SideProject054_XinPortfolio\routes\index.js
@@ -49,6 +49,18 @@ router.get("/professional_cert", function (req, res, next) {
 
 router.get("/professional_devp", function (req, res, next) {
 	res.render("Index/03Edu&Achievement05", { layout: "page_layout/Resume_layout" });
+});
+
+router.get("/act_plan_ryersonecs", function (req, res, next) {
+	res.render("Index/04ActivityPlan01", { layout: "page_layout/Resume_layout" });
+});
+
+router.get("/act_plan_workplace_kingdergarden", function (req, res, next) {
+	res.render("Index/04ActivityPlan02", { layout: "page_layout/Resume_layout" });
+});
+
+router.get("/act_plan_workplace_preschool", function (req, res, next) {
+	res.render("Index/04ActivityPlan03", { layout: "page_layout/Resume_layout" });
 });
 
 router.get("/skill_list", function (req, res, next) {
