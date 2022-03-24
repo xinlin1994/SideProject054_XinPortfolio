@@ -1,7 +1,7 @@
 /*
  * @Author: BDFD
  * @Date: 2021-10-10 13:47:41
- * @LastEditTime: 2022-03-24 11:36:57
+ * @LastEditTime: 2022-03-24 11:55:15
  * @LastEditors: BDFD
  * @Description: In User Settings Edit
  * @FilePath: \SideProject054_XinPortfolio\routes\index.js
@@ -23,17 +23,38 @@ router.get("/home", function (req, res, next) {
 	res.render("Index/01home", { layout: "page_layout/Resume_layout" });
 });
 
-router.get("/intro", function (req, res, next) {
-	res.render("Index/02Intro", { layout: "page_layout/Resume_layout" });
+router.get("/intro_aboutme", function (req, res, next) {
+	res.render("Index/02Intro01", { layout: "page_layout/Resume_layout" });
 });
 
-router.get("/achievement", function (req, res, next) {
-	res.render("Index/03Edu&Achievement", { layout: "page_layout/Resume_layout" });
+router.get("/intro_teachingphilosophy", function (req, res, next) {
+	res.render("Index/02Intro02", { layout: "page_layout/Resume_layout" });
+});
+
+router.get("/edu", function (req, res, next) {
+	res.render("Index/03Edu&Achievement01", { layout: "page_layout/Resume_layout" });
+});
+
+router.get("/work_exp", function (req, res, next) {
+	res.render("Index/03Edu&Achievement02", { layout: "page_layout/Resume_layout" });
+});
+
+router.get("/placement_exp", function (req, res, next) {
+	res.render("Index/03Edu&Achievement03", { layout: "page_layout/Resume_layout" });
+});
+
+router.get("/professional_cert", function (req, res, next) {
+	res.render("Index/03Edu&Achievement04", { layout: "page_layout/Resume_layout" });
+});
+
+router.get("/professional_devp", function (req, res, next) {
+	res.render("Index/03Edu&Achievement05", { layout: "page_layout/Resume_layout" });
 });
 
 router.get("/skill_list", function (req, res, next) {
 	res.render("Index/z02skill_list", { layout: "page_layout/Resume_layout" });
 });
+
 router.get("/certificate", function (req, res, next) {
 	res.render("Index/z02_1certificate_list", {
 		layout: "page_layout/Resume_layout",
