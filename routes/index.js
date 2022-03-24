@@ -1,7 +1,7 @@
 /*
  * @Author: BDFD
  * @Date: 2021-10-10 13:47:41
- * @LastEditTime: 2022-03-23 16:51:32
+ * @LastEditTime: 2022-03-23 16:55:41
  * @LastEditors: BDFD
  * @Description: In User Settings Edit
  * @FilePath: \SideProject054_XinPortfolio\routes\index.js
@@ -27,8 +27,8 @@ router.get("/intro", function (req, res, next) {
 	res.render("Index/02Intro", { layout: "page_layout/Resume_layout" });
 });
 
-router.get("/work_exp", function (req, res, next) {
-	res.render("Index/03work_exp", { layout: "page_layout/Resume_layout" });
+router.get("/achievement", function (req, res, next) {
+	res.render("Index/03Edu&Achievement", { layout: "page_layout/Resume_layout" });
 });
 
 router.get("/skill_list", function (req, res, next) {
