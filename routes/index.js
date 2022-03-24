@@ -1,7 +1,7 @@
 /*
  * @Author: BDFD
  * @Date: 2021-10-10 13:47:41
- * @LastEditTime: 2022-03-24 10:11:21
+ * @LastEditTime: 2022-03-24 10:34:10
  * @LastEditors: BDFD
  * @Description: In User Settings Edit
  * @FilePath: \SideProject054_XinPortfolio\routes\index.js
@@ -16,7 +16,7 @@ var router = express.Router();
 // 	res.render('Index/Login', { layout: 'page_layout/Login_layout' });
 // });
 router.get("/", function (req, res, next) {
-	res.render("Index/01home", { layout: "page_layout/Resume_layout" });
+	res.render("Index/01home", { layout: "Index/01Home" });
 });
 
 router.get("/home", function (req, res, next) {

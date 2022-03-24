@@ -1,7 +1,7 @@
 <!--
  * @Author: BDFD
  * @Date: 2022-03-23 13:45:20
- * @LastEditTime: 2022-03-23 16:22:58
+ * @LastEditTime: 2022-03-24 10:31:26
  * @LastEditors: BDFD
  * @Description: 
  * @FilePath: \SideProject054_XinPortfolio\views\Index\02Intro.ejs
@@ -12,27 +12,26 @@
 
 <div id="ace-content" class="ace-container-shift">
 	<div class="ace-container">
-		<%- include('../partials/small_navigation') %>
-			<div class="ace-paper-stock">
-				<main class="ace-paper clearfix">
-					<div class="ace-paper-cont clear-mrg">
-						<!-- START: PAGE CONTENT -->
-						<div class="padd-box clear-mrg">
+		<div class="ace-paper-stock">
+			<main class="ace-paper clearfix">
+				<div class="ace-paper-cont clear-mrg">
+					<!-- START: PAGE CONTENT -->
+					<div class="padd-box clear-mrg">
+						<!-- Summary Section -->
+						<%- include('../PageEdit/02IntroPage/01AboutMe') %>
 							<!-- Summary Section -->
-							<%- include('../PageEdit/02IntroPage/01AboutMe') %>
-								<!-- Summary Section -->
+							<!-- Personal Info Section -->
+							<%- include('../PageEdit/02IntroPage/02PhilosophyAndGoals') %>
 								<!-- Personal Info Section -->
-								<%- include('../PageEdit/02IntroPage/02PhilosophyAndGoals') %>
-									<!-- Personal Info Section -->
-									<!-- Qualification Section -->
-									<!-- Qualification Section -->
-									<!-- END: PAGE CONTENT -->
-						</div>
-						<!-- .ace-paper-cont -->
-				</main>
-				<!-- .ace-paper -->
-			</div>
-			<!-- .ace-paper-stock -->
+								<!-- Qualification Section -->
+								<!-- Qualification Section -->
+								<!-- END: PAGE CONTENT -->
+					</div>
+					<!-- .ace-paper-cont -->
+			</main>
+			<!-- .ace-paper -->
+		</div>
+		<!-- .ace-paper-stock -->
 	</div>
 	<!-- .ace-container -->
 </div>
