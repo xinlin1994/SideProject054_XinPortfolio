@@ -1,7 +1,7 @@
 /*
  * @Author: BDFD
  * @Date: 2021-10-10 13:47:41
- * @LastEditTime: 2022-03-24 14:10:52
+ * @LastEditTime: 2022-03-24 15:11:22
  * @LastEditors: BDFD
  * @Description: In User Settings Edit
  * @FilePath: \SideProject054_XinPortfolio\routes\index.js
@@ -12,12 +12,13 @@ var router = express.Router();
 //app.use('/', indexRouter);
 
 /* GET home page. */
-// router.get('/', function (req, res, next) {
-// 	res.render('Index/Login', { layout: 'page_layout/Login_layout' });
-// });
 router.get("/", function (req, res, next) {
-	res.render("Index/01home", { layout: "page_layout/Resume_layout" });
+	res.render("Index/Login", { layout: "page_layout/Login_layout" });
 });
+
+// router.get("/", function (req, res, next) {
+// 	res.render("Index/01home", { layout: "page_layout/Resume_layout" });
+// });
 
 router.get("/home", function (req, res, next) {
 	res.render("Index/01home", { layout: "page_layout/Resume_layout" });
