@@ -1,0 +1,321 @@
+<!--
+ * @Author: BDFD
+ * @Date: 2021-10-10 13:47:42
+ * @LastEditTime: 2022-03-24 10:17:28
+ * @LastEditors: BDFD
+ * @Description: In User Settings Edit
+ * @FilePath: \SideProject054_XinPortfolio\views\partials\header2.ejs
+-->
+<!-- DEMO STYLES -->
+<link href="nav/css/css.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="nav/css/styles.css">
+<!-- ITEM ASSETS -->
+<link rel="stylesheet" href="nav/css/normalize.min.css">
+<link rel="stylesheet" href="nav/css/all.min.css">
+<link rel="stylesheet" href="nav/css/item.css">
+<!-- ITEM SCRIPTS -->
+<script src="nav/js/item.js"></script>
+
+<!-- DEMO SCRIPTS -->
+<script src="nav/js/clipboard.js"></script>
+<script src="nav/js/scripts.js"></script>
+<!-- MONAKA HEADER -->
+<header class="monaka-header monaka-header-aligned-left" role="banner">
+	<div class="monaka-container monaka-flex monaka-align-middle monaka-align-justify">
+
+		<!-- MOBILE MENU TOGGLE -->
+		<div class="monaka-menu-toggler monaka-mobile-only">
+			<label for="MONAKA-NAV">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+					<path d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"></path>
+					<path fill="none" d="M0 0h24v24H0V0z"></path>
+				</svg>
+			</label>
+		</div>
+		<!-- MOBILE MENU TOGGLE END -->
+
+		<!-- MOBILE/DESKTOP LOGO -->
+		<!-- <div class="monaka-logo">
+                <h1>
+                    <a href="" title="Knox">
+                        <img src="../static/nav/picture/logo-light.png" alt="Knox Logo Light" class="monaka-logo-light">
+                        <img src="../static/nav/picture/logo-dark.png" alt="Knox Logo Dark" class="monaka-logo-dark">
+                        <span>Knox</span>
+                    </a>
+
+                </h1>
+            </div> -->
+		<!-- MOBILE/DESKTOP LOGO END -->
+
+		<div class="monaka-flex monaka-align-middle lg:monaka-flex-auto">
+			<input type="checkbox" id="MONAKA-NAV" class="monaka-menu-monitor monaka-hidden">
+			<label for="MONAKA-NAV" class="monaka-menu-overlay"></label>
+
+			<!-- MONAKA MENU -->
+			<nav class="monaka-menu" role="navigation">
+				<ul class="monaka-menu-title">
+					<li>
+
+						<!-- MOBILE MENU TOGGLE -->
+						<div class="monaka-menu-toggler">
+							<label for="MONAKA-NAV">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+									<path d="M3 18h12v-2H3v2zM3 6v2h18V6H3zm0 7h18v-2H3v2z"></path>
+									<path fill="none" d="M0 0h24v24H0V0z"></path>
+								</svg>
+							</label>
+						</div>
+						<!-- MOBILE MENU TOGGLE END -->
+
+						<!-- MOBILE LOGO
+                            <div class="monaka-logo">
+                                <h1>
+                                    <a href="" title="Knox">
+                                        <img src="../static/nav/picture/logo-light.png" alt="Knox Logo Light" class="monaka-logo-light">
+                                        <img src="../static/nav/picture/logo-dark.png" alt="Knox Logo Dark" class="monaka-logo-dark">
+                                        <span>Knox</span>
+                                    </a>
+
+                                </h1>
+                            </div> -->
+						<!-- MOBILE LOGO END -->
+
+					</li>
+				</ul>
+				<ul class="monaka-menu-body">
+					<li class="monaka-menu-item monaka-menu-active"><a href="/"><i class="fas fa-home"></i>
+							<span>首页</span></a></li>
+					<li class="monaka-menu-item">
+						<a href="#"><i class="fas fa-shipping-fast"></i> <span>计算模块</span> <span
+								class="monaka-menu-arrow"></span></a>
+						<ul>
+							<!-- DROPDOWN MENU -->
+							<li class="monaka-menu-item"><a href="#"><i class="fas fa-fingerprint"></i>
+									<span>统计模块</span><span class="monaka-menu-arrow"></span></a>
+								<ul>
+									<li class="monaka-menu-item"><a href="/Gumbel.html"><span>Gumbel 概率分布</span></a>
+									</li>
+									<li class="monaka-menu-item"><a href="#"><span>计算模块2</span></a></li>
+								</ul>
+							</li>
+							<li class="monaka-menu-item">
+								<a href="#"><i class="fas fa-baby-carriage"></i> <span>水力模块</span> <span
+										class="monaka-menu-arrow"></span></a>
+								<ul>
+									<li class="monaka-menu-item"><a
+											href="/greenampt.html"><span>Green-Ampt下渗模型</span></a></li>
+									<li class="monaka-menu-item"><a href="#"><span>波浪谱</span></a></li>
+								</ul>
+							</li>
+							<li class="monaka-menu-item"><a href="#"><i class="fas fa-basketball-ball"></i>
+									<span>结构模块</span><span class="monaka-menu-arrow"></span></a>
+								<ul>
+									<li class="monaka-menu-item"><a href="#"><span>结构模块1</span></a></li>
+									<li class="monaka-menu-item"><a href="#"><span>结构模块2</span></a></li>
+								</ul>
+							</li>
+							<!-- <li class="monaka-menu-item">
+                                    <a href="#"><i class="fas fa-calendar-check"></i> <span>Consectetur illum</span>
+                                        <span class="monaka-menu-arrow"></span></a>
+                                    <ul>
+                                        <li class="monaka-menu-item"><a href="#"><span>Lorem ipsum</span></a></li>
+                                        <li class="monaka-menu-item"><a href="#"><span>Quisquam tenetur</span></a></li>
+                                        <li class="monaka-menu-item"><a href="#"><span>Repellendus suscipit</span></a>
+                                        </li>
+                                        <li class="monaka-menu-item"><a href="#"><span>Facere quam</span></a></li>
+                                    </ul>
+                                </li> -->
+						</ul>
+					</li>
+					<!-- <li class="monaka-menu-item monaka-item-mega-menu">
+                            <a href="#"><i class="fas fa-check-circle"></i> <span>用途</span> <span
+                                    class="monaka-menu-arrow"></span></a>
+                            <ul>
+                                DROPDOWN MEGA MENU
+                                <li class="monaka-menu-item">
+                                    <div class="monaka-row">
+                                        <div class="monaka-col">
+                                            <div class="monaka-media">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-2-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">基础设施规划</a>
+                                                    <p class="monaka-media-description">
+                                                        主要用于滨水区域基础设施的规划、设计、管理、和评估。主要用于滨水区域基础设施的规划、设计、管理、和评估</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="monaka-col">
+                                            <div class="monaka-media">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-7-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">基础设施设计</a>
+                                                    <p class="monaka-media-description">
+                                                        主要用于滨水区域基础设施的规划、设计、管理、和评估主要用于滨水区域基础设施的规划、设计、管理、和评估</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="monaka-col">
+                                            <div class="monaka-media">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-3-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">基础设施管理</a>
+                                                    <p class="monaka-media-description">
+                                                        主要用于滨水区域基础设施的规划、设计、管理、和评估主要用于滨水区域基础设施的规划、设计、管理、和评估</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="monaka-col">
+                                            <div class="monaka-media">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-6-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">基础设施评估</a>
+                                                    <p class="monaka-media-description">
+                                                        主要用于滨水区域基础设施的规划、设计、管理、和评估主要用于滨水区域基础设施的规划、设计、管理、和评估</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li> -->
+					<!-- <li class="monaka-menu-item monaka-item-mega-menu">
+                            <a href="#"><i class="fas fa-star"></i> <span>经典案例</span> <span
+                                    class="monaka-menu-arrow"></span></a>
+                            <ul>
+                                DROPDOWN MEGA MENU
+                                <li class="monaka-menu-item">
+                                    <div class="monaka-row">
+                                        <div class="monaka-col">
+                                            <div class="monaka-media monaka-media-small">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-1-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">护岸</a>
+                                                    <p class="monaka-media-description">如护岸、防波堤、岸壁结构、码头、雨水排水设施等</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="monaka-media monaka-media-small">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-2-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">防波堤</a>
+                                                    <p class="monaka-media-description">如护岸、防波堤、岸壁结构、码头、雨水排水设施等</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="monaka-media monaka-media-small">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-3-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">岸壁结构</a>
+                                                    <p class="monaka-media-description">如护岸、防波堤、岸壁结构、码头、雨水排水设施等</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="monaka-col">
+                                            <div class="monaka-media monaka-media-small">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-4-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">码头</a>
+                                                    <p class="monaka-media-description">如护岸、防波堤、岸壁结构、码头、雨水排水设施等</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="monaka-media monaka-media-small">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-5-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">雨水排水</a>
+                                                    <p class="monaka-media-description">如护岸、防波堤、岸壁结构、码头、雨水排水设施等</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="monaka-media monaka-media-small">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-6-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">其他设施</a>
+                                                    <p class="monaka-media-description">如护岸、防波堤、岸壁结构、码头、雨水排水设施等</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="monaka-col">
+                                            <div class="monaka-media">
+                                                <div class="monaka-media-thumbnail">
+                                                    <a href="#"><img src="../static/nav/picture/landscape-7-thumb.jpg" alt=""></a>
+                                                </div>
+                                                <div class="monaka-media-info">
+                                                    <a class="monaka-media-title" href="#">经典案例</a>
+                                                    <p class="monaka-media-description">如护岸、防波堤、岸壁结构、码头、雨水排水设施等</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li> -->
+					<li class="monaka-menu-item monaka-menu-active"><a href="/use.html"><i class="fas fa-home"></i>
+							<span>使用说明</span></a></li>
+					<li class="monaka-menu-item monaka-menu-active"><a href="/dis.html"><i class="fas fa-home"></i>
+							<span>免责声明</span></a></li>
+				</ul>
+			</nav>
+			<div class="monaka-menu-right-section" style="margin-top:0px;">
+				<!-- <span style="font-family: 仿宋; font: size 19px;"><strong>滨水工程分析工作室</strong><br />
+                        <span style="font-family: Times New Roman; font: size 19px;">Waterfront Engineering
+                            Studio</span></span> -->
+				<img src="../static/imgs/gause/logo.png" alt="">
+				<!-- MONAKA MENU SEARCH -->
+				<!-- <form class="monaka-menu-search">
+                        <input class="monaka-hidden" id="MONAKA-SEARCH" type="checkbox">
+                        <label class="monaka-transparent-overlay" for="MONAKA-SEARCH"></label>
+                        <label class="monaka-pointer monaka-flex js-monaka-menu-search-icon" for="MONAKA-SEARCH">
+                            <svg class="monaka-search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewbox="0 0 24 24">
+                                <path
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                </path>
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                            </svg>
+                        </label>
+                        <div class="monaka-menu-search-field">
+                            <div class="monaka-container">
+                                <div class="monaka-menu-search-field-inner">
+                                    <label class="monaka-flex monaka-pointer" for="MONAKA-SEARCH">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewbox="0 0 24 24">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"></path>
+                                        </svg>
+                                    </label>
+                                    <input class="js-monaka-menu-search-field" type="search" placeholder="Search"
+                                        name="q" autocapitalize="off" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </form> -->
+				<!-- MONAKA MENU SEARCH END -->
+
+			</div>
+		</div>
+	</div>
+	<div class="monaka-header-shadow"></div>
+</header>
+<div class="monaka-header-spacer"></div>
+<!-- MONAKA HEADER END -->
