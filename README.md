@@ -9,4 +9,4 @@
 
 2022-03-23
 Upload to Heroku App
-Heroku Link: https://xinlinportfolio.herokuapp.com/
+Heroku Link: https://xin-lin-portfolio.herokuapp.com/
